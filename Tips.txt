@@ -1,0 +1,4 @@
+VS -> Tools -> Extensions and Updates -> Online:
+    -> Visual Studio Power Tools
+    -> Web Essentials
+Another Plugin to install is ReSharper (https://www.jetbrains.com/resharper/download/download-thanks.html?code=RSU&platform=windows).
