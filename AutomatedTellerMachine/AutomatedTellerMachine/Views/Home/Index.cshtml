@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-6 margin-top-20">
+        <a href="#" class="btn btn-primary btn-block">
+            Withdrawall
+        </a>
+        <a href="#" class="btn btn-primary btn-block">
+            Quick cash $100
+        </a>
+        <a href="@Url.Action("Details", "CheckingAccount")" class="btn btn-primary btn-block">
+            Balance Inquiry
+        </a>
+    </div>
+    <div class="col-md-6 margin-top-20">
+        <a href="#" class="btn btn-primary btn-block">
+            Print Statement
+        </a>
+        <a href="#" class="btn btn-primary btn-block">
+            Transfer Founds
+        </a>
+        <a href="#" class="btn btn-primary btn-block">
+            Deposit
+        </a>
+    </div>
+</div>
+
+
+@section scripts{
+    <script>var testing=true;</script>
+}
+@*
+    You are using @Request.Browser.Browser, and that's OK! Email us at support@ros7.com if you have any problems. Or send us a tweet @@leooros7.
+
+    @{ var amounts = new List<decimal> { 100, 22.50m, -40, 298.99m };}
+
+    <ul>
+        @foreach(decimal amount in amounts)
+        {
+            <li>@formatAmount(amount)</li>
+        }
+    </ul>
+
+        @helper formatAmount(decimal amount)
+        {
+            var color = "green";
+            if(amount < 0)
+        {
+            color = "red";
+        }
+        <span style="color:@color">@String.Format("{0:c}", amount)</span>
+    }
+*@
