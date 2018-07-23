@@ -1,0 +1,23 @@
+Nuget (https://msdn.microsoft.com/pt-br/data/jj591621):
+Enable-Migrations -ContextType ApplicationDbContext
+
+Add-Migration AccountNumberChanges
+
+//If you change the structure of your table, to see the script to implement the chenges, you can use this comand:
+Update-Database -Script
+
+//TO apply the migration:
+Update-Database -Verbose
+
+Update-Database -TargetMigration InitialCreate
+
+Update-Database -Script -SourceMigration: $InitialDatabase -TargetMigration: InitialCreate
+
+
+
+
+
+
+
+
+Update-Database -Verbose

@@ -118,3 +118,6 @@ C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\o
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.csproj.CopyComplete
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.dll
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.pdb
+C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.InitialCreate.resources
+C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.csproj.GenerateResource.cache
+C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.AccountNumberChanges.resources
