@@ -46,7 +46,7 @@ namespace AutomatedTellerMachine.Controllers
         [HttpPost]
         public ActionResult Contact(string message)
         {
-            ViewBag.TheMessage = "Thanks, we got your message!";
+            ViewBag.TheMessage = "Thanks, we got your message!" + message;
             return View();
         }
 

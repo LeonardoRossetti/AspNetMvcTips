@@ -53,3 +53,5 @@ C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine.T
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine.Tests\obj\Debug\AutomatedTellerMachine.Tests.pdb
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine.Tests\bin\Debug\Microsoft.Owin.Security.Facebook.dll
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine.Tests\bin\Debug\Microsoft.Owin.Security.Facebook.xml
+C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine.Tests\bin\Debug\EntityFramework.SqlServer.xml
