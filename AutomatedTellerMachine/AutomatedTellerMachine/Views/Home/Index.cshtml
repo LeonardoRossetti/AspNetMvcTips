@@ -21,11 +21,13 @@
         <a href="#" class="btn btn-primary btn-block">
             Transfer Founds
         </a>
-        <a href="#" class="btn btn-primary btn-block">
+        <a href="@Url.Action("Deposit", "Transaction", new { checkingAccountId = ViewBag.CheckingAccountId })" class="btn btn-primary btn-block">
             Deposit
         </a>
     </div>
 </div>
+
+@ViewBag.Pin
 
 
 @section scripts{

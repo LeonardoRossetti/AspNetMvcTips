@@ -113,7 +113,6 @@ C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\b
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\bin\Microsoft.AI.WindowsServer.xml
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\bin\Microsoft.AI.Web.xml
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.csprojAssemblyReference.cache
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.csproj.CoreCompileInputs.cache
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.csproj.CopyComplete
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.dll
@@ -121,3 +120,4 @@ C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\o
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.InitialCreate.resources
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.csproj.GenerateResource.cache
 C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.AccountNumberChanges.resources
+C:\Projects\AspNet\AspNetMvcTips\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.csprojAssemblyReference.cache

@@ -1,4 +1,5 @@
 ﻿using AutomatedTellerMachine.Models;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,11 @@ using System.Web.Mvc;
 
 namespace AutomatedTellerMachine.Controllers
 {
+    [Authorize]
     public class CheckingAccountController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
+
         // GET: CheckingAccount
         public ActionResult Index()
         {
@@ -18,15 +22,23 @@ namespace AutomatedTellerMachine.Controllers
         // GET: CheckingAccount/Details
         public ActionResult Details()
         {
-            var checkingAccount = new CheckingAccount
-            {
-                Id = 1,
-                AccountNumber = "000001257",
-                FirstName = "Leonardo",
-                LastName = "Rossetti",
-                Balance = 500
-            };
+            var userId = User.Identity.GetUserId();
+
+            var checkingAccount = db.CheckingAccounts.Where(c => c.ApplicationUserId == userId).First();
+
             return View(checkingAccount);
+        }
+
+        [Authorize(Roles="Admin")]
+        public ActionResult DetailsForAdmin(int id)
+        {
+            var checkingAccount = db.CheckingAccounts.Find(id);
+            return View("Details", checkingAccount);
+        }
+
+        public ActionResult List()
+        {
+            return View(db.CheckingAccounts.ToList());
         }
 
         // GET: CheckingAccount/Create
