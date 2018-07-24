@@ -15,3 +15,41 @@
     <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
     <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
 </address>
+
+<div id="formSection">
+    <h3>@ViewBag.TheMessage</h3>
+    <form method="post" id="contactForm">
+        <textarea name="message" id="message"></textarea>
+        <input type="submit" value="send" />
+    </form>
+    <img src="~/Content/Images/animated.gif" id="progress" style="display:none;" />
+</div>
+
+@section scripts{
+    <script>
+        $('#contactForm').submit(function () {
+            $('#progress').show();
+            $.post('', { message: $('#message').val() })
+                .done(function (response) {
+                    setTimeout(function () { $('#formSection').html(response); }, 2500);
+            });
+            return false;
+        });
+    </script>    
+}
+@*
+    Other way to do it:
+
+    <div id="formSection">
+    <h3>@ViewBag.TheMessage</h3>
+    @using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "formSection" }))
+    {
+        @Html.TextArea("message")
+        <input type="submit" value="send" />
+    }
+</div>
+
+@section scripts{
+    @* Need this ajax to use Ajax form. To use this ajax, go to Nuget and install it *@
+  @* <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}*@

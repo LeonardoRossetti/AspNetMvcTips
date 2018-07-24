@@ -32,7 +32,6 @@ namespace AutomatedTellerMachine.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
@@ -47,7 +46,7 @@ namespace AutomatedTellerMachine.Controllers
         public ActionResult Contact(string message)
         {
             ViewBag.TheMessage = "Thanks, we got your message!" + message;
-            return View();
+            return PartialView("_ContactThanks");
         }
 
         public ActionResult Foo()
