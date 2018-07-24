@@ -35,6 +35,22 @@ namespace AutomatedTellerMachine.Migrations
 
                 userManager.AddToRole(user.Id, "Admin");
             }
+
+            context.Transactions.Add(new Transaction { Amount = 300, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 301, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 302, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 303, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 304, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 300, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 301, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 302, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 303, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 304, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 300, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 301, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 302, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 303, CheckingAccountId = 4 });
+            context.Transactions.Add(new Transaction { Amount = 304, CheckingAccountId = 4 });
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 

@@ -19,37 +19,51 @@
 <div id="formSection">
     <h3>@ViewBag.TheMessage</h3>
     <form method="post" id="contactForm">
-        <textarea name="message" id="message"></textarea>
+        <textarea name="message" id="message" maxlength="150" data-bind="value:message, valueUpdate:'input'"></textarea>
         <input type="submit" value="send" />
+        <span data-bind="text:characteresRemaining"></span> characteres remaining
     </form>
     <img src="~/Content/Images/animated.gif" id="progress" style="display:none;" />
 </div>
 
 @section scripts{
+    <script src="~/Scripts/knockout-3.4.2.js"></script>
+
+    <script>
+        function ContactViewModel() {
+            var self = this;
+            self.message = ko.observable('');
+            self.characteresRemaining = ko.computed(function () {
+                return 150 - self.message().length;
+            })
+        }
+        ko.applyBindings(new ContactViewModel());
+    </script>
+
     <script>
         $('#contactForm').submit(function () {
             $('#progress').show();
             $.post('', { message: $('#message').val() })
                 .done(function (response) {
                     setTimeout(function () { $('#formSection').html(response); }, 2500);
-            });
+                });
             return false;
         });
-    </script>    
+    </script>
 }
 @*
-    Other way to do it:
+        Other way to do it:
 
-    <div id="formSection">
-    <h3>@ViewBag.TheMessage</h3>
-    @using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "formSection" }))
-    {
-        @Html.TextArea("message")
-        <input type="submit" value="send" />
-    }
-</div>
+        <div id="formSection">
+        <h3>@ViewBag.TheMessage</h3>
+        @using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "formSection" }))
+        {
+            @Html.TextArea("message")
+            <input type="submit" value="send" />
+        }
+    </div>
 
-@section scripts{
-    @* Need this ajax to use Ajax form. To use this ajax, go to Nuget and install it *@
-  @* <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
-}*@
+    @section scripts{
+        @* Need this ajax to use Ajax form. To use this ajax, go to Nuget and install it *@
+@* <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    }*@
